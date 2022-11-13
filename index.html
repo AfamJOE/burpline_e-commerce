@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./Images/00burpline.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/lightbox.min.css" />
+		<link rel="stylesheet" href="./style.css" />
+
+		<title>Burpline: e-commerce website</title>
+	</head>
+	<body>
+		<div id="main-container">
+			<!-- 1. INTRO -->
+			<div id="intro-section" class="inner-containers">
+				<nav>
+					<img
+						src="./Images/00burpline.png"
+						alt="emsLogo"
+						srcset=""
+						class="intro"
+						id="burplineNAV"
+					/>
+					<a href="#intro-section" class="intro nav-text">Intro</a>
+					<a href="#about-section" class="intro nav-text">About</a>
+					<a href="#shop-section" class="intro nav-text" id="shop">Shop</a>
+					<div id="nav-cart-img">
+						<img
+							id="cartSymbol"
+							src="./Images/cart.svg"
+							alt="cartSymbol"
+							srcset=""
+							class="intro"
+						/>
+						<p id="cartCount">0</p>
+					</div>
+				</nav>
+				<div id="intro-section-01">
+					<h1 id="title-style">
+						THE <br />
+						E-GENERATION <br />
+						STORE
+					</h1>
+					<img
+						src="./Images/gadetItems.png
+					"
+						alt=""
+						srcset=""
+					/>
+				</div>
+				<a href="#shop-section" class="active-btn-01"
+					><button class="active-btn">SHOP NOW</button></a
+				>
+			</div>
+			<!-- 2. ABOUT -->
+			<div id="about-section" class="inner-containers">
+				YOU HAVE FOUND THE AWESOME SITE FOR ALL YOUR ELECTRONICS AT THE BEST
+				AFFORDABLE PRICES THAT COME WITH FANTASTIC COUPONS OFFERS.
+				<br />
+				<br />
+				<br />
+				STAND A CHANCE TO WIN BIG IN OUR SEASONAL PROMOS WITH BONUS PRIZES.
+				<br />
+				<br />
+				<br />
+				SO WHAT ARE YOU WAITING FOR? START YOUR SHOPPING ADVENTURE.....NOW!!
+			</div>
+
+			<a href="#intro-section" class="intro nav-text" id="return-home"
+				><img src="./Images/icon_home_icon.png" alt="home_icon"
+			/></a>
+			<p id="shop-intro">OUR GADGETS</p>
+
+			<!-- 3. SHOP SECTION -->
+			<div id="shop-section" class="inner-containers"></div>
+
+			<div id="footer-section" class="inner-containers">
+				<img
+					src="./Images/00burpline.png"
+					alt="logo"
+					srcset=""
+					id="burplineFOOOTER"
+				/>
+				<p>Designed by AfamJOE!</p>
+			</div>
+		</div>
+
+		<!-- FORM -->
+		<div id="listed" class="hidden">
+			<div class="formBody customers-details">
+				<div class="input-data">
+					<label for="">Name:</label>
+					<input
+						type="text"
+						placeholder="Your Name"
+						class="input-style"
+						id="nameData"
+					/>
+				</div>
+				<p class="errorStyle" id="nameError"></p>
+
+				<div class="input-data">
+					<label for="emailData">Email:</label>
+					<input
+						type="email"
+						placeholder="Your Email"
+						class="input-style"
+						id="emailData"
+					/>
+				</div>
+				<p class="errorStyle" id="emailError"></p>
+
+				<div class="input-data">
+					<label for="">Phone:</label>
+					<input
+						type="number"
+						id="phoneNumberData"
+						placeholder="Your Phone Number"
+						class="input-style"
+					/>
+				</div>
+				<p class="errorStyle" id="phoneNumberError"></p>
+			</div>
+
+			<div id="cart-btn">
+				<button id="continue-shopping" class="active-btn cart-list-btn">
+					CONTINUE SHOPPING
+				</button>
+				<button
+					type="submit"
+					value="CHECKOUT"
+					id="check-out"
+					class="disabled-btn cart-list-btn"
+				>
+					CHECKOUT
+				</button>
+			</div>
+		</div>
+
+		<div id="receipt-page" class="hidden"></div>
+
+		<div id="black-cover" class="hidden"></div>
+		<div id="black-cover-01" class="hidden"></div>
+
+		<script src="https://js.paystack.co/v1/inline.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
